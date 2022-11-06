@@ -226,7 +226,7 @@ void smartphone::check(smartphone s) {
 		cin >> choice;
 		if (choice) {
 			cout << "Введите тип батареи:";
-			cin >> s.battery_get.type;
+			cin >> this->battery_get.type;
 		}
 	}
 	if (s.screen_get.type == s.screen_get.types[0] || s.screen_get.type == s.screen_get.types[1] || s.screen_get.type == s.screen_get.types[2]) {}
@@ -235,7 +235,7 @@ void smartphone::check(smartphone s) {
 		cin >> choice;
 		if (choice) {
 			cout << "Введите тип экрана:";
-			cin >> s.screen_get.type;
+			cin >> this->screen_get.type;
 		}
 	}
 	printf("Проверка завершена!\n");
