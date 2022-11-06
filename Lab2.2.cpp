@@ -251,12 +251,13 @@ int main() {
 	systema _system = systema("", 0);
 	cout << "Инициализация прошла успешно."<< endl;
 	smartphone* sp = new smartphone[2];
+	smartphone *d = new smartphone;
 	sp[0] = smartphone(_camera,_battery,_memory,_screen,_system);
 	sp[0].input();
 	sp->check(*sp);
 	sp[0].print();
 	sp->battery_status(*sp);
-	delete sp;
+	delete d;
 	delete[]sp;
 }
 
