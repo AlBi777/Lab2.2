@@ -12,7 +12,7 @@ private:
 	int front_camera;
 public:
 	camera();
-	camera(int main_camer);
+	camera(int main);
 	camera(int main, int front);
 	~camera();
 	void input();
